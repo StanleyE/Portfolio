@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+  margin: 0px; }
+
+#headDiv {
+  position: absolute; }
+
+header {
+  height: 20em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 3em;
+  font-size: 1.5rem;
+  box-shadow: 1px 3px 5px grey; }
+
+.link-btn {
+  height: 4em;
+  width: 7em;
+  border-radius: 10%;
+  margin: 0 2em;
+  background-color: ghostwhite; }
+
+.git {
+  position: relative;
+  top: -25px;
+  left: 0px; }
+
+.link {
+  position: relative;
+  top: -25px;
+  left: 0px; }
+
+.email {
+  position: relative;
+  top: -25px;
+  left: 0px; }
+
+.phone {
+  position: relative;
+  top: -25px;
+  left: 0px; }
+
+.twit {
+  position: relative;
+  top: -25px;
+  left: 0px; }
+
+#bodyDiv {
+  margin: 0.5em 4em; }
+
+.about {
+  background-color: ghostwhite;
+  box-shadow: 1px 3px 5px grey;
+  padding: 1em; }
+
+.past {
+  background-color: ghostwhite;
+  box-shadow: 1px 3px 5px grey;
+  padding: 1em; }
