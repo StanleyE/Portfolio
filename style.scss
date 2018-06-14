@@ -1,6 +1,7 @@
 body{
     text-align: center;
     margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #headDiv{
@@ -12,7 +13,7 @@ header{
     background-color: black;
     color: ghostwhite;
     text-align: center;
-    padding-top: 3em;
+    padding-top: 3.5em;
     font-size: 1.5rem;
     box-shadow: 1px 3px 5px grey;
     // h1{
@@ -59,13 +60,48 @@ header{
 }
 
 #bodyDiv{
-    margin: 0.5em 4em;
+    margin: 0.5em 5em;
+}
+
+.margx3 {
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .about{
     background-color: ghostwhite;
     box-shadow: 1px 3px 5px grey;
     padding: 1em;
+    display: inline-block;
+    overflow: auto;
+}
+
+.context {
+    display: inline-block;
+    p{
+        float: left;
+    }
+}
+
+.img {
+    background-color: rgb(8, 239, 247);
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+    float: right;
+}
+
+.code-skills{
+    display: inline-block;
+}
+
+.skill {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1em;
+    background-color: aquamarine;
 }
 
 .past {
