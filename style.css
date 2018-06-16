@@ -1,7 +1,7 @@
 body {
   text-align: center;
   margin: 0px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: 'Cardo', serif; }
 
 #headDiv {
   position: absolute; }
@@ -14,37 +14,44 @@ header {
   padding-top: 3.5em;
   font-size: 1.5rem;
   box-shadow: 1px 3px 5px grey; }
+  header h1 {
+    color: #B400FF;
+    text-shadow: 1px 2px 3px lavender; }
 
 .link-btn {
-  height: 4em;
-  width: 7em;
-  border-radius: 10%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
   margin: 0 2em;
-  background-color: ghostwhite; }
+  background-color: #B400FF; }
+  .link-btn a {
+    color: ghostwhite; }
+  .link-btn a:hover {
+    color: black; }
 
 .git {
   position: relative;
-  top: -25px;
+  top: -30px;
   left: 0px; }
 
 .link {
   position: relative;
-  top: -25px;
+  top: -30px;
   left: 0px; }
 
 .email {
   position: relative;
-  top: -25px;
+  top: -30px;
   left: 0px; }
 
 .phone {
   position: relative;
-  top: -25px;
+  top: -30px;
   left: 0px; }
 
 .twit {
   position: relative;
-  top: -25px;
+  top: -30px;
   left: 0px; }
 
 #bodyDiv {
@@ -67,9 +74,9 @@ header {
     float: left; }
 
 .img {
-  background-color: #08eff7;
-  height: 15em;
-  width: 15em;
+  background-color: #B400FF;
+  height: 18em;
+  width: 18em;
   border-radius: 50%;
   float: right; }
 
@@ -82,7 +89,7 @@ header {
   border-radius: 50%;
   display: inline-block;
   margin: 1em;
-  background-color: aquamarine; }
+  background-color: #B400FF; }
 
 .past {
   background-color: ghostwhite;

@@ -1,7 +1,9 @@
+$primeColor: #B400FF;
+
 body{
     text-align: center;
     margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Cardo', serif;
 }
 
 #headDiv{
@@ -16,46 +18,53 @@ header{
     padding-top: 3.5em;
     font-size: 1.5rem;
     box-shadow: 1px 3px 5px grey;
-    // h1{
-    // // text-shadow: 1px 2px 3px lavender;
-    // }
+    h1{
+        color: $primeColor;
+        text-shadow: 1px 2px 3px lavender;
+    }
 }
 
 .link-btn {
-    height: 4em;
-    width: 7em;
-    border-radius: 10%;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
     margin: 0 2em;
-    background-color: ghostwhite;
+    background-color: $primeColor;
+    a {
+        color: ghostwhite;
+    }
+    a:hover{
+        color: black;
+    }
 }
 
 .git {
     position:relative;
-    top: -25px;
+    top: -30px;
     left: 0px;
 }
 
 .link {
     position:relative;
-    top: -25px;
+    top: -30px;
     left: 0px;
 }
 
 .email {
     position:relative;
-    top: -25px;
+    top: -30px;
     left: 0px;
 }
 
 .phone {
     position:relative;
-    top: -25px;
+    top: -30px;
     left: 0px;
 }
 
 .twit {
     position:relative;
-    top: -25px;
+    top: -30px;
     left: 0px;
 }
 
@@ -84,9 +93,9 @@ header{
 }
 
 .img {
-    background-color: rgb(8, 239, 247);
-    height: 15em;
-    width: 15em;
+    background-color: $primeColor;
+    height: 18em;
+    width: 18em;
     border-radius: 50%;
     float: right;
 }
@@ -101,7 +110,7 @@ header{
     border-radius: 50%;
     display: inline-block;
     margin: 1em;
-    background-color: aquamarine;
+    background-color: $primeColor;
 }
 
 .past {
