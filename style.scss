@@ -18,10 +18,18 @@ header{
     padding-top: 3.5em;
     font-size: 1.5rem;
     box-shadow: 1px 3px 5px grey;
+    position: relative;
     h1{
         color: $primeColor;
-        text-shadow: 1px 2px 3px lavender;
+        font-weight: 700;
+        text-shadow: 0.5px 1.5px 2.5px lavender;
     }
+}
+
+.subHeader{
+    position: relative;
+    bottom: -4em;
+    color:darkgray;
 }
 
 .link-btn {
@@ -29,6 +37,7 @@ header{
     width: 5em;
     border-radius: 50%;
     margin: 0 2em;
+    box-shadow: 2px 3px 4px grey;
     background-color: $primeColor;
     a {
         color: ghostwhite;
@@ -40,32 +49,27 @@ header{
 
 .git {
     position:relative;
-    top: -30px;
-    left: 0px;
+    top: -2em;
 }
 
 .link {
     position:relative;
-    top: -30px;
-    left: 0px;
+    top: -2em;
 }
 
 .email {
     position:relative;
-    top: -30px;
-    left: 0px;
+    top: -2em;
 }
 
 .phone {
     position:relative;
-    top: -30px;
-    left: 0px;
+    top: -2em;
 }
 
 .twit {
     position:relative;
-    top: -30px;
-    left: 0px;
+    top: -2em;
 }
 
 #bodyDiv{
@@ -80,15 +84,20 @@ header{
 .about{
     background-color: ghostwhite;
     box-shadow: 1px 3px 5px grey;
-    padding: 1em;
-    display: inline-block;
-    overflow: auto;
+    padding: 1.25em;
+    height: auto;
+    width: auto;
 }
 
 .context {
-    display: inline-block;
-    p{
-        float: left;
+    display: flex;
+    // flex-wrap: nowrap;
+    text-align: left;
+    p {
+        line-height: 1.75rem;
+        font-weight: bold;
+        letter-spacing: 0.05rem;
+        margin: 1.25em;
     }
 }
 
@@ -97,7 +106,6 @@ header{
     height: 18em;
     width: 18em;
     border-radius: 50%;
-    float: right;
 }
 
 .code-skills{
@@ -111,6 +119,13 @@ header{
     display: inline-block;
     margin: 1em;
     background-color: $primeColor;
+    border: 1px solid ghostwhite;
+    box-shadow: 1px 2px 3px grey;
+        p{
+            margin-top: 2.5em;
+            font-weight: 700;
+            font-size: 1.25rem
+        }
 }
 
 .past {

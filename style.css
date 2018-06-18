@@ -13,16 +13,24 @@ header {
   text-align: center;
   padding-top: 3.5em;
   font-size: 1.5rem;
-  box-shadow: 1px 3px 5px grey; }
+  box-shadow: 1px 3px 5px grey;
+  position: relative; }
   header h1 {
     color: #B400FF;
-    text-shadow: 1px 2px 3px lavender; }
+    font-weight: 700;
+    text-shadow: 0.5px 1.5px 2.5px lavender; }
+
+.subHeader {
+  position: relative;
+  bottom: -4em;
+  color: darkgray; }
 
 .link-btn {
   height: 5em;
   width: 5em;
   border-radius: 50%;
   margin: 0 2em;
+  box-shadow: 2px 3px 4px grey;
   background-color: #B400FF; }
   .link-btn a {
     color: ghostwhite; }
@@ -31,28 +39,23 @@ header {
 
 .git {
   position: relative;
-  top: -30px;
-  left: 0px; }
+  top: -2em; }
 
 .link {
   position: relative;
-  top: -30px;
-  left: 0px; }
+  top: -2em; }
 
 .email {
   position: relative;
-  top: -30px;
-  left: 0px; }
+  top: -2em; }
 
 .phone {
   position: relative;
-  top: -30px;
-  left: 0px; }
+  top: -2em; }
 
 .twit {
   position: relative;
-  top: -30px;
-  left: 0px; }
+  top: -2em; }
 
 #bodyDiv {
   margin: 0.5em 5em; }
@@ -64,21 +67,24 @@ header {
 .about {
   background-color: ghostwhite;
   box-shadow: 1px 3px 5px grey;
-  padding: 1em;
-  display: inline-block;
-  overflow: auto; }
+  padding: 1.25em;
+  height: auto;
+  width: auto; }
 
 .context {
-  display: inline-block; }
+  display: flex;
+  text-align: left; }
   .context p {
-    float: left; }
+    line-height: 1.75rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin: 1.25em; }
 
 .img {
   background-color: #B400FF;
   height: 18em;
   width: 18em;
-  border-radius: 50%;
-  float: right; }
+  border-radius: 50%; }
 
 .code-skills {
   display: inline-block; }
@@ -89,7 +95,13 @@ header {
   border-radius: 50%;
   display: inline-block;
   margin: 1em;
-  background-color: #B400FF; }
+  background-color: #B400FF;
+  border: 1px solid ghostwhite;
+  box-shadow: 1px 2px 3px grey; }
+  .skill p {
+    margin-top: 2.5em;
+    font-weight: 700;
+    font-size: 1.25rem; }
 
 .past {
   background-color: ghostwhite;
