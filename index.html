@@ -16,6 +16,22 @@
 </head>
 <body>
     <div class = 'headDiv'>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Erica's Web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link js-scroll-trigger" href="#projects">Projects</a>
+                <a class="nav-item nav-link js-scroll-trigger" href="#skills">Skills</a>
+                <a class="nav-item nav-link js-scroll-trigger" href="#about">About</a>
+                <a class="nav-item nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
     <header>
         <h1>Erica Stanley</h1>
         <h3>Junior Front End Developer</h3>
@@ -26,22 +42,22 @@
     </header>
     <div>
         <button class = "link-btn git" >
-            <a href="https://github.com/StanleyE">
+            <a href="https://github.com/StanleyE" target="_blank">
                 <i class="fab fa-github fa-2x"></i>
             </a>
         </button>
         <button class = "link-btn link" >
-            <a href="https://www.linkedin.com/in/erica-stanley-7b7bb7162/">
+            <a href="https://www.linkedin.com/in/erica-stanley-7b7bb7162/" target="_blank">
                 <i class="fab fa-linkedin fa-2x"></i>
             </a>
         </button>
         <button class = "link-btn email" >
-            <a href="#">
+            <a href="mailto:erica.stanley@live.ca">
                 <i class="far fa-envelope fa-2x"></i>
             </a>
         </button>
         <button class = "link-btn phone" >
-            <a href="#">
+            <a href="tel:289-356-0808">
                 <i class="fas fa-mobile-alt fa-2x"></i>
             </a>
         </button>
@@ -57,20 +73,88 @@
         <h4>Side Nav Bar</h4>
     </div> -->
     <div id = 'bodyDiv'>
-    <div class = 'about margx3'>
-        <h2>About Me</h2>
-        <div class = 'context'>
-            <p>Hey there! <br>
-                My name is Erica and I am a Front-end web developer looking to help businesses succeed on the technical front with a functional and awesome webpage. I can create both simple and interactive web pages in Html5 and React.JS, styled with Css, Sass and Bootstrap.<br> 
-                Your business will be always be gorwing and changing, so if you want something you can edit and update yourself after set-up, let's talk about getting a Wordpress or Squarespace site up and running for you.<br>
-                Contact me for a quote to discuss how we can get your business connected with a whole new world.
-            </p>
-            <div class = 'img'>
-                <img class = 'img' src="./images/erica_b&w.png" alt="Selfie of Erica">
+    <div class = 'past margx3' id = "projects">
+        <!-- <h2>Past Projects</h2> -->
+        <div class = 'card-columns'>
+            <div class = 'card'>
+                <img class = 'card-img-top' src="./images/SemiColons.png" alt="Fake Band Website">
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>The SemiColons</h5>
+                    <p class = 'card-text'>A multi page website for a fake band made with Html, Css, Bootstrap and jQuery</p>
+                    <a href="https://github.com/StanleyE/SemiColons" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href=""><i class="far fa-eye fa-2x"></i></a>
+                </div>
             </div>
+            <div class = 'card'>
+                <img class = 'card-img-top' src="./images/MimicMovie.png" alt="Fake Movie Website">
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Mimic Movies</h5>
+                    <p class = 'card-text'>A movie website made with Html, Css, Bootstrap, Node, Ejs, Cheerio, Request and Express</p>
+                    <a href=""><i class="fab fa-github fa-2x" target="_blank"></i></a>
+                    <a href=""><i class="far fa-eye fa-2x"></i></a>
+                </div>
+            </div>
+            <div class = 'card' >
+                    <div class = 'card-body'>
+                        <h5 class = 'card-title'>Guessing Game</h5>
+                        <p class = 'card-text'>A number guessing game made with React and Javascript</p>
+                        <a href="https://github.com/StanleyE/JSNumberGuessingGame" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+            <div class = 'card'>
+                    <img class = 'card-img-top' src="./images/nerdA.png" alt="Fake Nerd's Apparel Website">
+                    <div class = 'card-body'>
+                        <h5 class = 'card-title'>Nerds Apparel</h5>
+                        <p class = 'card-text'>A fake e-com store for nerdy hats and shoes. Made as a SPA with React.js, Sass, Bootstrap, Javascript, Node, Axios and Express</p>
+                        <a href=""><i class="fab fa-github fa-2x" target="_blank"></i></a>
+                        <a href=""><i class="far fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class = 'card title' >
+                    <div class = 'card-body'>
+                        <h2 class = 'card-title'>Projects</h2>
+                        <p class = 'card-text'>Past work and side projects, some still under construction</p>
+                        <a href="https://github.com/StanleyE" target="_blank"><i id="p-icon" class="fab fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class = 'card'>
+                    <img class = 'card-img-top' src="./images/BlindPlate.png" alt="BlindPlate a social meeting website">
+                    <div class = 'card-body'>
+                        <h5 class = 'card-title'>BlindPlates</h5>
+                        <p class = 'card-text'>BlindPlate was my capstone project. It was meant to be a socializing web app where, on a form submit, the restaurants location would be geoqueried and other users (just dummy data was used) would be found within that location and contacted via a automated text message by Twilio</p>
+                        <p>Made as a SPA with React, Node, Express, Twilio, GeoJson and MongoDB</p>
+                        <a href="https://github.com/StanleyE/BlindPlates"><i class="fab fa-github fa-2x" target="_blank"></i></a>
+                        <a href="https://blindplates.herokuapp.com/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class = 'card'>
+                    <!-- <img class = 'card-img-top' src="#" alt="Fake audio website"> -->
+                    <div class = 'card-body'>
+                        <h5 class = 'card-title'>Audio Player Site</h5>
+                        <p class = 'card-text'>A fake audio SPA made with React, Css, Bootstrap, Node and Express</p>
+                        <a href=""><i class="fab fa-github fa-2x" target="_blank"></i></a>
+                    </div>
+                </div>
+                <div class = 'card'>
+                        <img class = 'card-img-top' src="./images/todo.png" alt="Fake To Do website">
+                        <div class = 'card-body'>
+                            <h5 class = 'card-title'>ToDo List</h5>
+                            <p class = 'card-text'>A todo list made with React, Node and Javascript</p>
+                            <a href=""><i class="fab fa-github fa-2x" target="_blank"></i></a>
+                            <a href=""><i class="far fa-eye fa-2x"></i></a>
+                        </div>
+                    </div>
+                <div class = 'card'>
+                    <!-- <img class = 'card-img-top' src="#" alt="Fake audio website"> -->
+                    <div class = 'card-body'>
+                        <h5 class = 'card-title'>WordPress Blog</h5>
+                        <p class = 'card-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio, unde a nesciunt rem possimus corrupti exercitationem tempore vero deleniti?</p>
+                        <a href="https://ericaswebcoding.wordpress.com/" target="_blank"><i class="far fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
         </div>
     </div>
-    <div>
+    <div id = 'skills'>
         <h2>My Current Skills</h2>
         <div class = 'code-skills margx3' >
             <div class = 'skill' ><p>Html5</p></div>
@@ -83,59 +167,25 @@
             <div class = 'skill' ><p>MongoDB</p></div>
         </div>
     </div>
-    <div class = 'past margx3'>
-        <h2>Past Projects</h2>
-        <div class = 'card-columns'>
-            <div class = 'card'>
-                <img class = 'card-img-top' src="#" alt="">
-                <div class = 'card-body'>
-                    <h5 class = 'card-title'>Lorem</h5>
-                    <p class = 'card-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum eum, animi aliquid aperiam at ducimus maiores cum itaque assumenda.</p>
+    <div class = 'about margx3' id='about'>
+            <h2>About Me</h2>
+            <div class = 'context'>
+                <p>Hey there! <br>
+                    My name is Erica and I am a Front-end web developer looking to help businesses succeed on the technical front with a functional and awesome webpage. I can create both simple and interactive web pages in Html5 and React.JS, styled with Css, Sass and Bootstrap.<br> 
+                    Your business will always be growing and changing, so if you want something you can edit and update yourself after set-up, let's talk about getting a Wordpress or Squarespace site up and running for you.<br>
+                    Contact me for a quote to discuss how we can get your business connected with a whole new world.
+                </p>
+                <div class = 'img'>
+                    <img class = 'img' src="./images/erica_b&w.png" alt="Selfie of Erica">
                 </div>
             </div>
-            <div class = 'card'>
-                <img class = 'card-img-top' src="#" alt="">
-                <div class = 'card-body'>
-                    <h5 class = 'card-title'>Lorem</h5>
-                    <p class = 'card-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum eum, animi aliquid aperiam at ducimus maiores cum itaque assumenda.</p>
-                </div>
-            </div>
-            <div class = 'card'>
-                    <img class = 'card-img-top' src="#" alt="">
-                    <div class = 'card-body'>
-                        <h5 class = 'card-title'>Lorem</h5>
-                        <p class = 'card-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum eum, animi aliquid aperiam at ducimus maiores cum itaque assumenda.</p>
-                    </div>
-                </div>
-                <div class = 'card'>
-                    <img class = 'card-img-top' src="#" alt="">
-                    <div class = 'card-body'>
-                        <h5 class = 'card-title'>Lorem</h5>
-                        <p class = 'card-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum eum, animi aliquid aperiam at ducimus maiores cum itaque assumenda.</p>
-                    </div>
-                </div>
-
         </div>
     </div>
-    <!-- <div>
-        <h2>Future Skills</h2>
-            <div class = 'code-skills margx3' >
-                <div class = 'skill' ><p>Python</p></div>
-                <div class = 'skill' ><p>React Native</p></div>
-                <div class = 'skill' ><p>MYSQL</p></div>
-                <div class = 'skill' ><p></p></div>
-                <div class = 'skill' ><p></p></div>
-                <div class = 'skill' ><p></p></div>
-                <div class = 'skill' ><p></p></div>
-                <div class = 'skill' ><p></p></div>
-            </div>
-    </div> -->
-    </div>
-    <footer>
+    <footer id='contact'>
         <h2>Contact Me for a Quote</h2>
         <form action="meh">
-            <input type="text">
-            <input type="text">
+            <a href="mailto:erica.stanley@live.ca"><i class="icon far fa-envelope fa-2x"></i>Erica.Stanley@live.ca</a>
+            <a href="tel:289-356-0808"><i class="icon fas fa-mobile-alt fa-2x"></i>(289)356-0808</a>
         </form>
     </footer>
     <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">

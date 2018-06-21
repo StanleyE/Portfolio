@@ -1,7 +1,8 @@
-$primeColor: #B400FF;
+$primeColor: #0073FF;
 
 body{
     text-align: center;
+    align-content: center;
     margin: 0px;
     font-family: 'Cardo', serif;
 }
@@ -10,26 +11,59 @@ body{
     position: absolute;
 }
 
+#bodyDiv {
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+nav {
+    opacity: 0.75;
+    .nav-link:hover{
+        background-color: grey;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:white;
+}
+
+
 header{
-    height: 20em;
+    height: 31em;
+    width: 98.9vw;
     background-color: black;
+    background-image: url('./images/temple-unsplash-cropped.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: ghostwhite;
     text-align: center;
     padding-top: 3.5em;
     font-size: 1.5rem;
-    box-shadow: 1px 3px 5px grey;
+    // box-shadow: 1px 3px 5px grey;
     position: relative;
     h1{
         color: $primeColor;
         font-weight: 700;
-        text-shadow: 0.5px 1.5px 2.5px lavender;
+        text-shadow: 0.5px 1.5px 2.5px white;
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 2rem;
     }
 }
 
 .subHeader{
     position: relative;
     bottom: -4em;
-    color:darkgray;
+    color:rgb(219, 236, 255);
+    h4{
+        font-weight: 700;
+    }
 }
 
 .link-btn {
@@ -37,43 +71,40 @@ header{
     width: 5em;
     border-radius: 50%;
     margin: 0 2em;
-    box-shadow: 2px 3px 4px grey;
+    // box-shadow: 2px 3px 4px grey;
     background-color: $primeColor;
+    opacity: 0.75;
     a {
-        color: ghostwhite;
+        color: black;
     }
     a:hover{
-        color: black;
+        color: ghostwhite;
     }
 }
 
 .git {
     position:relative;
-    top: -2em;
+    top: -2.25em;
 }
 
 .link {
     position:relative;
-    top: -2em;
+    top: -2.25em;
 }
 
 .email {
     position:relative;
-    top: -2em;
+    top: -2.25em;
 }
 
 .phone {
     position:relative;
-    top: -2em;
+    top: -2.25em;
 }
 
 .twit {
     position:relative;
-    top: -2em;
-}
-
-#bodyDiv{
-    margin: 0.5em 5em;
+    top: -2.25em;
 }
 
 .margx3 {
@@ -82,8 +113,9 @@ header{
 }
 
 .about{
-    background-color: ghostwhite;
-    box-shadow: 1px 3px 5px grey;
+    // background: linear-gradient(white, #0073FF, white);
+    background-color: $primeColor;
+    // box-shadow: 1px 3px 5px grey;
     padding: 1.25em;
     height: auto;
     width: auto;
@@ -118,8 +150,9 @@ header{
     border-radius: 50%;
     display: inline-block;
     margin: 1em;
-    background-color: $primeColor;
-    border: 1px solid ghostwhite;
+    // background-color: $primeColor;
+    // background: linear-gradient(#0073FF, white);
+    border: 1px solid $primeColor;
     box-shadow: 1px 2px 3px grey;
         p{
             margin-top: 2.5em;
@@ -129,9 +162,30 @@ header{
 }
 
 .past {
-    background-color: ghostwhite;
-    box-shadow: 1px 3px 5px grey;
-    padding: 1em;
+    .fa-2x{
+        color: black;
+        margin: 0.25em;
+    }
+    .fa-2x:hover{
+        color: $primeColor;
+    }
+}
+
+#p-icon:hover {
+    color:white;
+}
+
+.card:hover{
+    box-shadow: 3px 4px 5px grey;
+}
+
+.title {
+    background-color:$primeColor;
+    font-weight: 700;
+    box-shadow: 2px 3px 4px grey;
+    h2{
+        font-size: 2rem;
+    }
 }
 
 
@@ -140,4 +194,17 @@ footer {
     height: auto;
     color:ghostwhite;
     padding: 2em;
+    padding-bottom: 3rem;
+    a{
+        color:white;
+        padding:0.50em;
+        margin:1em;
+    }
+    a:hover{
+        color:$primeColor;
+    }
+}
+
+.icon{
+    margin: 0.75em;
 }

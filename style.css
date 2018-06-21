@@ -1,72 +1,93 @@
 body {
   text-align: center;
+  align-content: center;
   margin: 0px;
   font-family: 'Cardo', serif; }
 
 #headDiv {
   position: absolute; }
 
+#bodyDiv {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+nav {
+  opacity: 0.75; }
+  nav .nav-link:hover {
+    background-color: grey; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: black; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white; }
+
 header {
-  height: 20em;
+  height: 31em;
+  width: 98.9vw;
   background-color: black;
+  background-image: url("./images/temple-unsplash-cropped.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: ghostwhite;
   text-align: center;
   padding-top: 3.5em;
   font-size: 1.5rem;
-  box-shadow: 1px 3px 5px grey;
   position: relative; }
   header h1 {
-    color: #B400FF;
+    color: #0073FF;
     font-weight: 700;
-    text-shadow: 0.5px 1.5px 2.5px lavender; }
+    text-shadow: 0.5px 1.5px 2.5px white;
+    font-size: 4rem; }
+  header h3 {
+    font-size: 2rem; }
 
 .subHeader {
   position: relative;
   bottom: -4em;
-  color: darkgray; }
+  color: #dbecff; }
+  .subHeader h4 {
+    font-weight: 700; }
 
 .link-btn {
   height: 5em;
   width: 5em;
   border-radius: 50%;
   margin: 0 2em;
-  box-shadow: 2px 3px 4px grey;
-  background-color: #B400FF; }
+  background-color: #0073FF;
+  opacity: 0.75; }
   .link-btn a {
-    color: ghostwhite; }
-  .link-btn a:hover {
     color: black; }
+  .link-btn a:hover {
+    color: ghostwhite; }
 
 .git {
   position: relative;
-  top: -2em; }
+  top: -2.25em; }
 
 .link {
   position: relative;
-  top: -2em; }
+  top: -2.25em; }
 
 .email {
   position: relative;
-  top: -2em; }
+  top: -2.25em; }
 
 .phone {
   position: relative;
-  top: -2em; }
+  top: -2.25em; }
 
 .twit {
   position: relative;
-  top: -2em; }
-
-#bodyDiv {
-  margin: 0.5em 5em; }
+  top: -2.25em; }
 
 .margx3 {
   margin-top: 5em;
   margin-bottom: 5em; }
 
 .about {
-  background-color: ghostwhite;
-  box-shadow: 1px 3px 5px grey;
+  background-color: #0073FF;
   padding: 1.25em;
   height: auto;
   width: auto; }
@@ -81,7 +102,7 @@ header {
     margin: 1.25em; }
 
 .img {
-  background-color: #B400FF;
+  background-color: #0073FF;
   height: 18em;
   width: 18em;
   border-radius: 50%; }
@@ -95,21 +116,45 @@ header {
   border-radius: 50%;
   display: inline-block;
   margin: 1em;
-  background-color: #B400FF;
-  border: 1px solid ghostwhite;
+  border: 1px solid #0073FF;
   box-shadow: 1px 2px 3px grey; }
   .skill p {
     margin-top: 2.5em;
     font-weight: 700;
     font-size: 1.25rem; }
 
-.past {
-  background-color: ghostwhite;
-  box-shadow: 1px 3px 5px grey;
-  padding: 1em; }
+.past .fa-2x {
+  color: black;
+  margin: 0.25em; }
+
+.past .fa-2x:hover {
+  color: #0073FF; }
+
+#p-icon:hover {
+  color: white; }
+
+.card:hover {
+  box-shadow: 3px 4px 5px grey; }
+
+.title {
+  background-color: #0073FF;
+  font-weight: 700;
+  box-shadow: 2px 3px 4px grey; }
+  .title h2 {
+    font-size: 2rem; }
 
 footer {
   background-color: black;
   height: auto;
   color: ghostwhite;
-  padding: 2em; }
+  padding: 2em;
+  padding-bottom: 3rem; }
+  footer a {
+    color: white;
+    padding: 0.50em;
+    margin: 1em; }
+  footer a:hover {
+    color: #0073FF; }
+
+.icon {
+  margin: 0.75em; }
