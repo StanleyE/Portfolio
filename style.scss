@@ -113,12 +113,12 @@ header{
 }
 
 .about{
-    // background: linear-gradient(white, #0073FF, white);
+    background: linear-gradient(white, #0073FF, black);
     background-color: $primeColor;
-    // box-shadow: 1px 3px 5px grey;
-    padding: 1.25em;
-    height: auto;
+    padding: 1.75em;
+    height: 60vh;
     width: auto;
+    margin-top: 3em;
 }
 
 .context {
@@ -188,6 +188,9 @@ header{
     }
 }
 
+.eye {
+    background:white
+}
 
 footer {
     background-color: black;

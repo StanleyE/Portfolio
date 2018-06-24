@@ -87,10 +87,12 @@ header {
   margin-bottom: 5em; }
 
 .about {
+  background: linear-gradient(white, #0073FF, black);
   background-color: #0073FF;
-  padding: 1.25em;
-  height: auto;
-  width: auto; }
+  padding: 1.75em;
+  height: 60vh;
+  width: auto;
+  margin-top: 3em; }
 
 .context {
   display: flex;
@@ -142,6 +144,9 @@ header {
   box-shadow: 2px 3px 4px grey; }
   .title h2 {
     font-size: 2rem; }
+
+.eye {
+  background: white; }
 
 footer {
   background-color: black;
