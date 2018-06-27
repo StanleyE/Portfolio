@@ -17,9 +17,16 @@ body{
 }
 
 nav {
-    opacity: 0.75;
+    opacity: 0.80;
+    font-weight: 700;
     .nav-link:hover{
         background-color: grey;
+    }
+    a.navbar-brand{
+        margin-right:2em;
+    }
+    .links{
+        margin-right: 2em;
     }
 }
 
@@ -112,6 +119,9 @@ header{
 }
 
 .past {
+    .p-title{
+        margin:2em;
+    }
     .fa-2x{
         color: black;
         margin: 0.25em;
@@ -146,17 +156,45 @@ header{
 }
 
 .skill {
-    height: 8em;
-    width: 8em;
+    height: 10em;
+    width: 10em;
     border-radius: 50%;
     display: inline-block;
-    margin: 1em;
+    margin: 1.5em 4em;
     border: 1px solid $primeColor;
     box-shadow: 1px 2px 3px grey;
+        .logo{
+            margin-top: 0.75em;
+            margin-bottom: 0.25em;
+        }
         p{
-            margin-top: 2.5em;
+            // margin-top: 2.5em;
             font-weight: 700;
             font-size: 1.25rem
+        }
+        .fa-html5{
+            color:#FF5733;
+        }
+        .fa-css3-alt {
+            color:#33A9DC;
+        }
+        .fa-sass{
+            color:#CD6799;
+        }
+        .fa-bold{
+            color:#8A57D8;
+        }
+        .fa-react{
+            color:#61DAFB;
+        }
+        .fa-node-js{
+            color:#80DB01;
+        }
+        .fa-code{
+            color:#A0A3A5;
+        }
+        .fa-leaf{
+            color:#429734;
         }
 }
 

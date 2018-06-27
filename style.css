@@ -12,9 +12,14 @@ body {
   margin-right: 0px; }
 
 nav {
-  opacity: 0.75; }
+  opacity: 0.80;
+  font-weight: 700; }
   nav .nav-link:hover {
     background-color: grey; }
+  nav a.navbar-brand {
+    margin-right: 2em; }
+  nav .links {
+    margin-right: 2em; }
 
 .navbar-light .navbar-nav .nav-link {
   color: black; }
@@ -87,6 +92,9 @@ header {
   margin-top: 5em;
   margin-bottom: 5em; }
 
+.past .p-title {
+  margin: 2em; }
+
 .past .fa-2x {
   color: black;
   margin: 0.25em; }
@@ -114,17 +122,35 @@ header {
   display: inline-block; }
 
 .skill {
-  height: 8em;
-  width: 8em;
+  height: 10em;
+  width: 10em;
   border-radius: 50%;
   display: inline-block;
-  margin: 1em;
+  margin: 1.5em 4em;
   border: 1px solid #0073FF;
   box-shadow: 1px 2px 3px grey; }
+  .skill .logo {
+    margin-top: 0.75em;
+    margin-bottom: 0.25em; }
   .skill p {
-    margin-top: 2.5em;
     font-weight: 700;
     font-size: 1.25rem; }
+  .skill .fa-html5 {
+    color: #FF5733; }
+  .skill .fa-css3-alt {
+    color: #33A9DC; }
+  .skill .fa-sass {
+    color: #CD6799; }
+  .skill .fa-bold {
+    color: #8A57D8; }
+  .skill .fa-react {
+    color: #61DAFB; }
+  .skill .fa-node-js {
+    color: #80DB01; }
+  .skill .fa-code {
+    color: #A0A3A5; }
+  .skill .fa-leaf {
+    color: #429734; }
 
 .about {
   background: linear-gradient(white, #0073FF);
