@@ -24,7 +24,7 @@ nav {
 
 header {
   height: 31em;
-  width: 98.9vw;
+  width: 100vw;
   background-color: black;
   background-image: url("./images/temple-unsplash-cropped.jpg");
   background-position: center;
@@ -48,7 +48,8 @@ header {
   bottom: -4em;
   color: #dbecff; }
   .subHeader h4 {
-    font-weight: 700; }
+    font-weight: 700;
+    color: ghostwhite; }
 
 .link-btn {
   height: 5em;
@@ -86,28 +87,28 @@ header {
   margin-top: 5em;
   margin-bottom: 5em; }
 
-.about {
-  background: linear-gradient(white, #0073FF, black);
-  background-color: #0073FF;
-  padding: 1.75em;
-  height: 60vh;
-  width: auto;
-  margin-top: 3em; }
+.past .fa-2x {
+  color: black;
+  margin: 0.25em; }
 
-.context {
-  display: flex;
-  text-align: left; }
-  .context p {
-    line-height: 1.75rem;
-    font-weight: bold;
-    letter-spacing: 0.05rem;
-    margin: 1.25em; }
+.past .fa-2x:hover {
+  color: #0073FF; }
 
-.img {
+.past .eye {
+  background: white; }
+
+#p-icon:hover {
+  color: white; }
+
+.card:hover {
+  box-shadow: 3px 4px 5px grey; }
+
+.title {
   background-color: #0073FF;
-  height: 18em;
-  width: 18em;
-  border-radius: 50%; }
+  font-weight: 700;
+  box-shadow: 2px 3px 4px grey; }
+  .title h2 {
+    font-size: 2rem; }
 
 .code-skills {
   display: inline-block; }
@@ -125,34 +126,37 @@ header {
     font-weight: 700;
     font-size: 1.25rem; }
 
-.past .fa-2x {
-  color: black;
-  margin: 0.25em; }
-
-.past .fa-2x:hover {
-  color: #0073FF; }
-
-#p-icon:hover {
-  color: white; }
-
-.card:hover {
-  box-shadow: 3px 4px 5px grey; }
-
-.title {
+.about {
+  background: linear-gradient(white, #0073FF);
   background-color: #0073FF;
-  font-weight: 700;
-  box-shadow: 2px 3px 4px grey; }
-  .title h2 {
-    font-size: 2rem; }
+  padding: 1.75em;
+  padding-bottom: 2em;
+  height: auto;
+  width: auto;
+  margin-top: 3em; }
 
-.eye {
-  background: white; }
+.img {
+  background-color: #0073FF;
+  height: 18em;
+  width: 18em;
+  border-radius: 50%; }
+
+.context {
+  display: flex;
+  height: auto;
+  width: auto;
+  text-align: left; }
+  .context p {
+    line-height: 1.75rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin: 1.25em; }
 
 footer {
-  background-color: black;
+  background: linear-gradient(#0073FF, black);
   height: auto;
   color: ghostwhite;
-  padding: 2em;
+  padding: 5em;
   padding-bottom: 3rem; }
   footer a {
     color: white;
@@ -160,6 +164,29 @@ footer {
     margin: 1em; }
   footer a:hover {
     color: #0073FF; }
+  footer p {
+    color: grey; }
+  footer .none {
+    padding: 0;
+    margin: 0;
+    color: grey; }
+  footer .none:hover {
+    color: #0073FF; }
+  footer .icon {
+    margin: 0.75em; }
 
-.icon {
-  margin: 0.75em; }
+@media (max-width: 500px) {
+  body p {
+    font-size: 1.25rem; }
+  nav {
+    opacity: 1; }
+  .img {
+    display: none; }
+  .card h5 {
+    font-size: 1.50rem; }
+  footer a {
+    font-size: 1.20rem; }
+  .icon {
+    display: block; }
+  .shoutout {
+    margin-top: 2em; } }
