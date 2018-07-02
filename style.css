@@ -215,4 +215,6 @@ footer {
   .icon {
     display: block; }
   .shoutout {
-    margin-top: 2em; } }
+    margin-top: 2em; }
+  .link-btn {
+    margin: 0; } }
