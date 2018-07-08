@@ -304,6 +304,7 @@ footer {
         h1{
         padding-right: 0;
         font-weight: 700;
+        font-size: 5rem;
         }
         h3{
         padding-right: 0;
@@ -325,8 +326,9 @@ footer {
         font-size:1.25rem;
     }
     .subHeader{
+        bottom: -4em;
         h4{
-            color: white;
+            color: slategray;
         }
     }
     nav{

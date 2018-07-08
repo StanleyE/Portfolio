@@ -234,7 +234,8 @@ footer {
     text-align: center; }
     header h1 {
       padding-right: 0;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 5rem; }
     header h3 {
       padding-right: 0;
       font-weight: 700; }
@@ -248,8 +249,10 @@ footer {
 @media (max-width: 500px) {
   body p {
     font-size: 1.25rem; }
-  .subHeader h4 {
-    color: white; }
+  .subHeader {
+    bottom: -4em; }
+    .subHeader h4 {
+      color: slategray; }
   nav {
     opacity: 1; }
   .img {
