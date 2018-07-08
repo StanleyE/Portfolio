@@ -1,10 +1,12 @@
-$primeColor: #0073FF;
+$primeColor: #66FFFF;
+$secondColor: #0073FF;
 
 body{
     text-align: center;
     align-content: center;
     margin: 0px;
     font-family: 'Cardo', serif;
+    background: linear-gradient(#66FFFF, ghostwhite, white);        
 }
 
 #headDiv{
@@ -14,11 +16,14 @@ body{
 #bodyDiv {
     margin-left: 0px;
     margin-right:0px;
+    margin-bottom: 0px;
+    color:black;
 }
 
 nav {
     opacity: 0.80;
     font-weight: 700;
+    width: 100vw;
     .nav-link:hover{
         background-color: grey;
     }
@@ -42,34 +47,41 @@ nav {
 header{
     height: 31em;
     width: 100vw;
-    background-color: black;
-    background-image: url('./images/temple-unsplash-cropped.jpg');
+    // background-color: black;
+    background-image: url('./images/20180704-DSC_6736.final.matte.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: ghostwhite;
-    text-align: center;
+    color: black;
+    text-align: right;
+    opacity: 0.75;
     padding-top: 3.5em;
     font-size: 1.5rem;
     position: relative;
     h1{
-        color: $primeColor;
+        color: black;
         font-weight: 700;
-        text-shadow: 0.5px 1.5px 2.5px white;
-        font-size: 4rem;
+        text-shadow: 0.5px 1.5px 2.5px #0073FF;
+        font-size: 7rem;
+        padding-right: 2em;
     }
     h3{
         font-size: 2rem;
+        padding-right: 16em;
     }
 }
 
 .subHeader{
     position: relative;
-    bottom: -4em;
+    bottom: -7em;
+    right: 8em;
     color:rgb(219, 236, 255);
+    .subTitle{
+        padding-right:20.5em;
+    }
     h4{
         font-weight: 700;
-        color:ghostwhite;
+        color:black;
     }
 }
 
@@ -78,13 +90,14 @@ header{
     width: 5em;
     border-radius: 50%;
     margin: 0 2em;
-    background-color: $primeColor;
+    background-color: black;
     opacity: 0.75;
     a {
-        color: black;
+        color: white;
     }
     a:hover{
-        color: ghostwhite;
+        color: $secondColor;
+        opacity:1;
     }
 }
 
@@ -127,7 +140,7 @@ header{
         margin: 0.25em;
     }
     .fa-2x:hover{
-        color: $primeColor;
+        color: $secondColor;
     }
     .eye {
         background:white
@@ -141,11 +154,22 @@ header{
 .card:hover{
     box-shadow: 3px 4px 5px grey;
 }
+h2{
+    font-size: 3rem;
+}
+
+.card-columns .card{
+    margin-bottom: 2.50em;
+}
+.card {
+    border: 1px solid silver;
+}
+
 
 .title {
-    background-color:$primeColor;
+    background: radial-gradient(circle, white 0%, #66FFFF 40%, #0073FF 100%);
     font-weight: 700;
-    box-shadow: 2px 3px 4px grey;
+    // box-shadow: 2px 3px 4px grey;
     h2{
         font-size: 2rem;
     }
@@ -155,14 +179,20 @@ header{
     display: inline-block;
 }
 
+#skills {
+    margin-top: 10em;
+}
+
 .skill {
     height: 10em;
     width: 10em;
     border-radius: 50%;
     display: inline-block;
     margin: 1.5em 4em;
-    border: 1px solid $primeColor;
+    border: 1px solid black;
     box-shadow: 1px 2px 3px grey;
+    background: white;
+    color:black;
         .logo{
             margin-top: 0.75em;
             margin-bottom: 0.25em;
@@ -199,8 +229,8 @@ header{
 }
 
 .about{
-    background: linear-gradient(white, #0073FF);
-    background-color: $primeColor;
+    background: linear-gradient(white, #66FFFF);
+    // background-color: $primeColor;
     padding: 1.75em;
     padding-bottom: 2em;
     height: auto;
@@ -210,8 +240,12 @@ header{
 
 .img {
     background-color: $primeColor;
-    height: 18em;
-    width: 18em;
+    background-image: url(./images/20180704-DSC_6656.forPrint.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20em;
+    width: 35em;
     border-radius: 50%;
 }
 
@@ -229,7 +263,8 @@ header{
 }
 
 footer {
-    background: linear-gradient( #0073FF, black);    
+    background: linear-gradient( #66FFFF, #0073FF); 
+    // background:$primeColor;   
     height: auto;
     color:ghostwhite;
     padding: 5em;
@@ -240,19 +275,21 @@ footer {
         margin:1em;
     }
     a:hover{
-        color:$primeColor;
+        color:black;
     }
     p{
-        color: grey;
+        color: black;
     }
-    .none{
+    .handWash{
         padding:0;
         margin:0;
-        color:grey;
+        color:white;
     }
     
-    .none:hover{
-        color:$primeColor;
+    .handWash:hover{
+        color:hotpink;
+        font-weight:700;
+        font-size:1.25rem;
     }
     
     .icon{
@@ -261,9 +298,36 @@ footer {
     
 }
 
+@media (max-width: 1000px){
+    header {
+        text-align: center;
+        h1{
+        padding-right: 0;
+        font-weight: 700;
+        }
+        h3{
+        padding-right: 0;
+        font-weight: 700;
+        }
+    }
+    .subHeader{
+        position: relative;
+        bottom: -7em;
+        right: 0;
+        .subTitle{
+            padding-right:1em;
+        }
+    }
+}
+
 @media (max-width: 500px){
     body p{
         font-size:1.25rem;
+    }
+    .subHeader{
+        h4{
+            color: white;
+        }
     }
     nav{
         opacity: 1;
