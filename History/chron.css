@@ -1,0 +1,22 @@
+body {
+    background-color: aliceblue;
+    padding-bottom: 2em;
+}
+
+div {
+    /* border: 1px solid black; */
+    padding: 10rem;
+    border-radius: 50%;
+    width: 10vw;
+    margin: auto;
+}
+
+.test1 {
+    border-left: 15px solid blueviolet;
+    /* border-bottom: 10px solid orangered; */
+}
+
+.test2 {
+    /* border-top: 2.5px solid purple; */
+    border-right: 15px solid blueviolet;
+}
