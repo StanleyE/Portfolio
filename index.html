@@ -9,7 +9,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700" rel="stylesheet">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <!-- Animation CSS -->
@@ -22,7 +22,10 @@
     <!-- Nav Bar -->
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">Erica's Web</a>
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-spider"></i>
+                Erica's Web
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,6 +35,7 @@
                 <a class="links nav-item nav-link js-scroll-trigger" href="#skills">Skills</a>
                 <a class="links nav-item nav-link js-scroll-trigger" href="#about">About</a>
                 <a class="links nav-item nav-link js-scroll-trigger" href="#contact">Contact</a>
+                <a class="links nav-item nav-link" href="./History/chronological.html">History</a>
                 </div>
             </div>
         </nav>
@@ -76,9 +80,6 @@
     </div>
     
     <div id = 'bodyDiv'>
-        <h4>
-            <a href="./History/chronological.html">History</a>
-        </h4>
     <!-- Past -->
     <div class = 'past margx3' id = "projects">
         <h2 class="p-title">Projects</h2>
@@ -126,8 +127,18 @@
                 </div>
             </div>
 
+            <!-- Guessing Game -->
+            <div class = 'card' >
+                    <div class = 'card-body'>
+                        <h5 class = 'card-title'>Guessing Game</h5>
+                        <p class = 'card-text'>A number guessing game made with Javascript</p>
+                        <a href="https://github.com/StanleyE/JSNumberGuessingGame" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+
              <!-- Letterkenny Lorum Ispum -->
              <div class = 'card' >
+                 <img class = 'card-img-top' src="./images/Letterkenny.png" alt="Letterkenny Lorem Ipsum generator">
                 <div class = 'card-body'>
                     <h5 class = 'card-title'>Letterkenny Lorum Ipsum</h5>
                     <p class = 'card-text'>A Lorum Ipsum paragraph generator based off the quotes from the Canadian comedy Letterkenny. Made with React.js, JavaScript, Sass and Bootstrap. *Still under construction*</p>
@@ -136,14 +147,7 @@
             </div>
 
 
-             <!-- Guessing Game -->
-             <div class = 'card' >
-                <div class = 'card-body'>
-                    <h5 class = 'card-title'>Guessing Game</h5>
-                    <p class = 'card-text'>A number guessing game made with Javascript</p>
-                    <a href="https://github.com/StanleyE/JSNumberGuessingGame" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                </div>
-            </div>
+             
 
             <!-- Nerds Apparel -->
             <div class = 'card'>
@@ -194,7 +198,7 @@
 
                 <!-- BlindPlates -->
                 <div class = 'card'>
-                    <img class = 'card-img-top' src="./images/BlindPlate.png" alt="BlindPlate a social meeting website">
+                    <img class = 'card-img-top' src="./images/BlindPlatesredo.png" alt="BlindPlate a social meeting website">
                     <div class = 'card-body'>
                         <h5 class = 'card-title'>BlindPlates</h5>
                         <p class = 'card-text'>BlindPlate was my capstone project. It was meant to be a socializing web app where, on a form submit, the restaurants location would be geoqueried and other users (just dummy data was used) would be found within that location and contacted via a automated text message by Twilio</p>

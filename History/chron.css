@@ -12,11 +12,11 @@ div {
 }
 
 .test1 {
-    border-left: 15px solid blueviolet;
+    border-left: 15px solid black;
     /* border-bottom: 10px solid orangered; */
 }
 
 .test2 {
     /* border-top: 2.5px solid purple; */
-    border-right: 15px solid blueviolet;
+    border-right: 15px solid black;
 }
