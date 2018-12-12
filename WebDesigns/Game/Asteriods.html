@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asteriods</title>
+</head>
+<body>
+    <canvas id="gameCanvas" width="700" height="500"></canvas>
+    <script>
+    // Variables
+        const FPS = 30; //frames per second
+
+    /** @type {HTMLCanvasElement} */
+    //Game Board
+        let canvas = document.getElementById("gameCanvas");
+        let context = canvas.getContext("2d")
+    //Set up game loop
+        setInterval(update, 1000 / FPS)
+
+        function update() {
+        //Draw Space/GameBorad
+            context.fillStyle = "black";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        //Draw ship
+        //Rotate ship
+        //move the ship
+        }    
+    </script>
+    
+</body>
+</html>
