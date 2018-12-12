@@ -87,14 +87,26 @@ header h1 {
 .gridContainer img{
     width: 20rem;
     height: 20rem;
-    margin-bottom: 2.5rem;
-    -webkit-transition: width 1s, height 1s;
-    transition: width 1s, height 1s;
+    margin-top: 2.5rem;
+    -webkit-transition: width 1s, height 1s, border 1.2s;
+    transition: width 1s, height 1s, border 1.2s;
 }
 
 .gridContainer img:hover{
     width: 25rem;
     height: 25rem;
+    border-bottom: 20px solid #ff000f;
+}
+
+.hashImg {
+    color:white;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+.hashImg:hover{
+    color:#ff000f;
+    font-size: 2rem;
 }
 
 footer{
