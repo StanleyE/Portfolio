@@ -34,6 +34,8 @@ header h1 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
+    width: 90vw;
+    float: right;
     margin-top: 5em;
 }
 
@@ -59,8 +61,8 @@ header h1 {
 }
 
 .history {
-    margin: 10em 0;
-    padding: 1em;
+    padding: 10em 1em;
+    width: 85vw;
     /* border: 1px dashed red; */
     overflow: auto;
 }
@@ -87,9 +89,9 @@ header h1 {
 .gridContainer img{
     width: 20rem;
     height: 20rem;
-    margin-top: 2.5rem;
-    -webkit-transition: width 1s, height 1s, border 1.2s;
-    transition: width 1s, height 1s, border 1.2s;
+    margin-top: 1rem;
+    -webkit-transition: width 1s, height 1s, border 1s;
+    transition: width 1s, height 1s, border 1s;
 }
 
 .gridContainer img:hover{
@@ -100,13 +102,22 @@ header h1 {
 
 .hashImg {
     color:white;
-    -webkit-transition: color 1s;
-    transition: color 1s;
+    position: relative;
+    -webkit-transition: color 1s, font 1s, font-style 400ms, font-weight 400ms;
+    transition: color 1s, font 1s, font-style 400ms, font-weight 400ms;
+}
+
+.hashTag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .hashImg:hover{
     color:#ff000f;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
 }
 
 footer{
