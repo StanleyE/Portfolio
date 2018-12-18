@@ -12,6 +12,7 @@
     // Variables
         const FPS = 30; //frames per second
         const friction = 0.7; // friction coefficient of space (0= no friction, 1 = lots of friction)
+        const asterJag = 0.4; // jaggedness of the asteroids (0=none, 1=lots)
         const asterNum = 3; // starting number of asteroids
         const asterSize = 100; // starting size of asteroids in pixels
         const asterSpeed = 50; // max starting speed of asteroids in pixels per second
@@ -100,14 +101,19 @@
 
         function newAsteroid(x, y) {
             let aster = {
+                a: Math.round() * Math.PI * 2, //in radians
+                offs: [],
+                r: asterSize / 2,
+                vertex: Math.floor(Math.random() * (asterVert + 1) + asterVert / 2),
                 x: x,
                 y: y,
                 xv: Math.random() * asterSpeed / FPS * (Math.random() < 0.5 ? 1 : -1),
                 yv: Math.random() * asterSpeed / FPS * (Math.random() < 0.5 ? 1 : -1),
-                r: asterSize / 2,
-                a: Math.round() * Math.PI * 2, //in radians
-                vertex: Math.floor(Math.random() * (asterVert + 1) + asterVert / 2),
             };
+            // populate the offsets array
+            for (let i = 0; i < aster.vertex; i++) {
+                aster.offs.push(Math.random() * asterJag * 2 + 1 - asterJag);
+            }
             return aster;
         }
 
@@ -170,28 +176,29 @@
 
         //Draw Asteroids
             context.strokeStyle = "slategrey";
-            context.lineWidth = shipSize/20;
-            var x, y, r, a, vertex;
+            context.lineWidth = shipSize / 20;
+            var x, y, r, a, vertex, offs;
             for (var i = 0; i < asteroids.length; i++) {
                 //Get the asteroid properties
+                a = asteroids[i].a;
+                r = asteroids[i].r;
                 x = asteroids[i].x;
                 y = asteroids[i].y;
-                r = asteroids[i].r;
-                a = asteroids[i].a;
+                offs = asteroids[i].offs;
                 vertex = asteroids[i].vertex;
 
                 //Draw a path
                 context.beginPath();
                 context.moveTo(
-                    x + r * Math.cos(a),
-                    y + r * Math.sin(a)
+                    x + r * offs[0] * Math.cos(a),
+                    y + r * offs[0] * Math.sin(a)
                 );
 
                 //Draw a polygon
-                for (let j = 0; j < vertex; j++) {
+                for (var j = 1; j < vertex; j++) {
                     context.lineTo(
-                        x + r * Math.cos(a + j * Math.PI * 2 / vertex),
-                        y + r * Math.sin(a + j * Math.PI * 2 / vertex)
+                        x + r * offs[j] * Math.cos(a + j * Math.PI * 2 / vertex),
+                        y + r * offs[j] * Math.sin(a + j * Math.PI * 2 / vertex)
                     );
                 }
                 context.closePath();
