@@ -13,7 +13,7 @@
         const FPS = 30; //frames per second
         const friction = 0.7; // friction coefficient of space (0= no friction, 1 = lots of friction)
         const asterJag = 0.4; // jaggedness of the asteroids (0=none, 1=lots)
-        const asterNum = 3; // starting number of asteroids
+        const asterNum = 13; // starting number of asteroids
         const asterSize = 100; // starting size of asteroids in pixels
         const asterSpeed = 50; // max starting speed of asteroids in pixels per second
         const asterVert = 10; // avg. number of vertices on each asteroid
@@ -175,7 +175,7 @@
             context.fillRect(ship.x -1, ship.y -1, 2, 2);
 
         //Draw Asteroids
-            context.strokeStyle = "slategrey";
+            context.strokeStyle = "pink";
             context.lineWidth = shipSize / 20;
             var x, y, r, a, vertex, offs;
             for (var i = 0; i < asteroids.length; i++) {
@@ -186,6 +186,9 @@
                 y = asteroids[i].y;
                 offs = asteroids[i].offs;
                 vertex = asteroids[i].vertex;
+
+                context.fillStyle = "yellow";
+                context.fillRect(x -1, y -1, r, r);
 
                 //Draw a path
                 context.beginPath();
@@ -200,11 +203,16 @@
                         x + r * offs[j] * Math.cos(a + j * Math.PI * 2 / vertex),
                         y + r * offs[j] * Math.sin(a + j * Math.PI * 2 / vertex)
                     );
+                    context.fillStyle = "blue";
+                    context.fillRect(x -1, y -1, r/2, r/2);
                 }
                 context.closePath();
                 context.stroke();
 
                 //Move the Asteroids
+                asteroids[i].x += asteroids[i].xv;
+                asteroids[i].y += asteroids[i].yv;
+
                 //Handle edge of screen
             }
 
