@@ -92,6 +92,11 @@ header h1 {
     padding: 0 1em;
 }
 
+.slideImg img{
+    height: 15em;
+    width: 15em;
+}
+
 .gridContainer{
     display: flex;
     flex-flow: row wrap;
